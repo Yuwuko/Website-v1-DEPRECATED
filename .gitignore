@@ -1,0 +1,10 @@
+# Editor settings
+.idea/
+.ideaDataSources/
+/*.iws
+/*.ipr
+/*.iml
+
+# Configuration files
+dbCredentials.php
+postOpts.php

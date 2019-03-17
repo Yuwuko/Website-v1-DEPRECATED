@@ -1,0 +1,19 @@
+<div class='jumbotron container text-center'><h2>Yuuko</h2></div>
+
+<ul class="nav navbar-fixed-top nav-tabs container">      
+    <li class="nav-item">
+        <a class="nav-link" href="https://www.yuuko.info">Commands</a>
+    </li>
+            
+    <li class="nav-item">
+        <a class="nav-link" href="https://metrics.yuuko.info:3000/d/euzZCcUik/yuuko?refresh=10s&orgId=1&kiosk" target="_blank">Metrics</a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link" href="dashboard.php">Dashboard</a> <!-- dashboard.php -->
+    </li>
+          
+    <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://discord.gg/VsM25fN">Support Server</a>
+    </li>      
+</ul>
