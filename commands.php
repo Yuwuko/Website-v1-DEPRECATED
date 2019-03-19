@@ -46,7 +46,7 @@
                 <tr>
                     <td>help</td>
                     <td>Sends a private message to the user with a link to the GitHub repository where this list is located, or sends usage information about the given command.</td>
-                    <td>-help | [command]</td>
+                    <td>-help, -help [command]</td>
                     <td><code>-help</code>, <code>-help play</code></td>
                 </tr>
 
@@ -89,7 +89,7 @@
                 <tr>
                     <td>kick <span class="badge badge-danger">KICK_MEMBERS</span></td>
                     <td>Kicks the provided user from, with an optional reason.</td>
-                    <td>-kick @user | [reason]</td>
+                    <td>-kick @user, -kick @user [reason]</td>
                     <td><code>-kick @Yuuko</code>, <code>-kick @Yuuko not very nice.</code></td>
                 </tr>
 
@@ -103,14 +103,14 @@
                 <tr>
                     <td>mute <span class="badge badge-danger">MUTE_MEMBERS</span></td>
                     <td>Mutes the provided user from both voice and text chat on the server, with an optional reason (Toggle)</td>
-                    <td>-mute @user | [reason]</td>
+                    <td>-mute @user, -mute @user [reason]</td>
                     <td><code>-mute @Yuuko</code>, <code>-mute @Yuuko test reason</code></td>
                 </tr>
 
                 <tr>
                     <td>nuke <span class="badge badge-danger">MESSAGE_MANAGE</span> <span class="badge badge-danger">MANAGE_CHANNEL</span></td>
                     <td>Deletes the provided number of messages from a text channel <strong>OR</strong> if tagged, the whole channel. Max Channels <code>10</code>, Max messages <code>100</code>. (Warning: Nuking via #channel will break any bindings you have created!)</td>
-                    <td>-nuke [value] | #channel</td>
+                    <td>-nuke [value], -nuke #channel</td>
                     <td><code>-nuke 50</code>, <code>-nuke #nsfw</code></td>
                 </tr>
             </tbody>
@@ -132,7 +132,7 @@
                 <tr>
                     <td>play</td>
                     <td>Starts playback of the given audio track through either URL or search term. Will ask Yuuko to join the voice channel of the command issuer and if a track is already playing, queue it instead. Using the command without arguments will resume a paused player.</td>
-                    <td>-play | [url] | [term]</td>
+                    <td>-play, -play [url], -play [term]</td>
                     <td><code>-play https://www.youtube.com/watch?v=DDW4hTWbRYs</code>, <code>-play something</code></td>
                 </tr>
 
@@ -188,14 +188,14 @@
                 <tr>
                     <td>clear</td>
                     <td>Clears the current queue of all of the current tracks, or clears a single track from the given position in the queue.</td>
-                    <td>-clear | [position]</td>
+                    <td>-clear, -clear [position]</td>
                     <td><code>-clear</code>, <code>-clear 4</code></td>
                 </tr>
 
                 <tr>
                     <td>background</td>
                     <td>Sets the background track and starts playback. Background tracks will play if there is nothing in queue and queued tracks will play instead of the background track. Use the command with no parameters to unset a set background.</td>
-                    <td>-background [url] | [term]</td>
+                    <td>-background [url], -background [term]</td>
                     <td><code>-background https://www.youtube.com/watch?v=va3Dj_sUCJs</code>, <code>-background cool music</code></td>
                 </tr>
 
@@ -209,7 +209,7 @@
                 <tr>
                     <td>search</td>
                     <td>Searches YouTube and returns the first 10 results, a choice is made by typing the number and the selected track will be queued.</td>
-                    <td>-search [term]</td>
+                    <td>-search [term], -search [value], -search cancel</td>
                     <td><code>-search funky beats</code></td>
                 </tr>
                 
@@ -302,7 +302,7 @@
                 <tr>
                     <td>londonunderground</td>
                     <td>Returns full line coverage for the London Underground which is accurate to command execution, with optional <code>min</code> argument to return a minified version.</td>
-                    <td>-londonunderground | [min]</td>
+                    <td>-londonunderground, -londonunderground [min]</td>
                     <td><code>-londonunderground</code>, <code>-londonunderground min</code></td>
                 </tr>
 
@@ -373,7 +373,7 @@
                 <tr>
                     <td>angry</td>
                     <td>Displays that you are angry, or angry at the tagged user.</td>
-                    <td>-angry | @user</td>
+                    <td>-angry, -angry @user</td>
                     <td><code>-angry</code>, <code>-angry @Yuuko#2525</code></td>
                 </tr>
 
@@ -387,21 +387,21 @@
                 <tr>
                     <td>laugh</td>
                     <td>Displays that you are laughing, or laughing at the tagged user.</td>
-                    <td>-laugh | @user</td>
+                    <td>-laugh, -laugh @user</td>
                     <td><code>-laugh</code>, <code>laugh @Yuuko#2525</code></td>
                 </tr>
 
                 <tr>
                     <td>pout</td>
                     <td>Displays that you are pouting, or pouts at the tagged user.</td>
-                    <td>-pout | @user</td>
+                    <td>-pout, -pout @user</td>
                     <td><code>-pout</code>, <code>-pout @Yuuko#2525</code></td>
                 </tr>
 
                 <tr>
                     <td>shrug</td>
                     <td>Displays that you are shrugging, or shrugs at the tagged user.</td>
-                    <td>-shrug | @user</td>
+                    <td>-shrug, -shrug @user</td>
                     <td><code>-shrug</code>, <code>-shrug @Yuuko#2525</code></td>
                 </tr>
 
@@ -458,7 +458,7 @@
                 <tr>
                     <td>roll</td>
                     <td>Rolls a die with the given value and returns the result. Rolling <code>00</code> will return a multiple of 10 between <code>0</code> and <code>100</code>.</td>
-                    <td>-roll [value] | [00]</td>
+                    <td>-roll [value], -roll 00</td>
                     <td><code>-roll 42</code></td>
                 </tr>
 
@@ -508,7 +508,7 @@
                 <tr>
                     <td>osu</td>
                     <td>Returns information about an osu! player on a specified mode. (Modes: 0 = Osu, 1 = Taiko, 2 = CtB, 3 = Mania)</td>
-                    <td>-osu [username] | [mode]</td>
+                    <td>-osu [username], -osu [username] [mode]</td>
                     <td><code>-osu galaxiosaurus</code>, <code>-osu galaxiosaurus 3</code></td>
                 </tr>
 
@@ -551,8 +551,8 @@
                 <tr>
                     <td>neko</td>
                     <td>Returns a random lewd neko image by default or another type with a given parameter</td>
-                    <td>-neko | [type]</td>
-                    <td>&lt;code&gt;-neko | boobs&lt;/code&gt;</td>
+                    <td>-neko, -neko [type]</td>
+                    <td><code>-neko</code>, &lt;code&gt;-neko boobs&lt;/code&gt;</td>
                 </tr>
             </tbody>
         </table>

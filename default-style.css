@@ -45,18 +45,12 @@ html, body{
 }
 
 .card-deck {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px;
     margin: auto;
 }
 
 .metrics-set {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px;
     margin: auto;
     text-align: center;
 }
