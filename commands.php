@@ -300,10 +300,10 @@
 
             <tbody>
                 <tr>
-                    <td>linestatus</td>
+                    <td>londonunderground</td>
                     <td>Returns full line coverage for the London Underground which is accurate to command execution, with optional <code>min</code> argument to return a minified version.</td>
-                    <td>-linestatus | [min]</td>
-                    <td><code>-linestatus</code>, <code>-linestatus min</code></td>
+                    <td>-londonunderground | [min]</td>
+                    <td><code>-londonunderground</code>, <code>-londonunderground min</code></td>
                 </tr>
 
                 <tr>
