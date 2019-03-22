@@ -2,20 +2,134 @@
 
 <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active" id="command-core-tab" data-toggle="tab" href="#command-core" role="tab" aria-controls="command-home" aria-selected="true">Core <span id="command-core-count" class="badge badge-secondary">0</span></a>
-        <a class="nav-item nav-link" id="command-moderation-tab" data-toggle="tab" href="#command-moderation" role="tab" aria-controls="command-moderation" aria-selected="false">Moderation <span id="command-moderation-count" class="badge badge-secondary">0</span></a>
         <a class="nav-item nav-link" id="command-audio-tab" data-toggle="tab" href="#command-audio" role="tab" aria-controls="command-audio" aria-selected="false">Audio <span id="command-audio-count" class="badge badge-secondary">0</span></a>
-        <a class="nav-item nav-link" id="command-interaction-tab" data-toggle="tab" href="#command-interaction" role="tab" aria-controls="command-interaction" aria-selected="false">Interaction <span id="command-interaction-count" class="badge badge-secondary">0</span></a>
-        <a class="nav-item nav-link" id="command-utility-tab" data-toggle="tab" href="#command-utility" role="tab" aria-controls="command-utility" aria-selected="false">Utility <span id="command-utility-count" class="badge badge-secondary">0</span></a>
-        <a class="nav-item nav-link" id="command-media-tab" data-toggle="tab" href="#command-media" role="tab" aria-controls="command-media" aria-selected="false">Media <span id="command-media-count" class="badge badge-secondary">0</span></a>
-        <a class="nav-item nav-link" id="command-world-tab" data-toggle="tab" href="#command-world" role="tab" aria-controls="command-world" aria-selected="false">World <span id="command-world-count" class="badge badge-secondary">0</span></a>
+        <a class="nav-item nav-link active" id="command-core-tab" data-toggle="tab" href="#command-core" role="tab" aria-controls="command-home" aria-selected="true">Core <span id="command-core-count" class="badge badge-secondary">0</span></a>
         <a class="nav-item nav-link" id="command-fun-tab" data-toggle="tab" href="#command-fun" role="tab" aria-controls="command-fun" aria-selected="false">Fun <span id="command-fun-count" class="badge badge-secondary">0</span></a>
+        <a class="nav-item nav-link" id="command-interaction-tab" data-toggle="tab" href="#command-interaction" role="tab" aria-controls="command-interaction" aria-selected="false">Interaction <span id="command-interaction-count" class="badge badge-secondary">0</span></a>
+        <a class="nav-item nav-link" id="command-media-tab" data-toggle="tab" href="#command-media" role="tab" aria-controls="command-media" aria-selected="false">Media <span id="command-media-count" class="badge badge-secondary">0</span></a>
+        <a class="nav-item nav-link" id="command-moderation-tab" data-toggle="tab" href="#command-moderation" role="tab" aria-controls="command-moderation" aria-selected="false">Moderation <span id="command-moderation-count" class="badge badge-secondary">0</span></a>
         <a class="nav-item nav-link" id="command-nsfw-tab" data-toggle="tab" href="#command-nsfw" role="tab" aria-controls="command-nsfw" aria-selected="false">NSFW <span id="command-nsfw-count" class="badge badge-secondary">0</span></a>
+        <a class="nav-item nav-link" id="command-utility-tab" data-toggle="tab" href="#command-utility" role="tab" aria-controls="command-utility" aria-selected="false">Utility <span id="command-utility-count" class="badge badge-secondary">0</span></a>
+        <a class="nav-item nav-link" id="command-world-tab" data-toggle="tab" href="#command-world" role="tab" aria-controls="command-world" aria-selected="false">World <span id="command-world-count" class="badge badge-secondary">0</span></a>
         <a class="nav-item nav-link" id="command-settings-tab" data-toggle="tab" href="#command-settings" role="tab" aria-controls="command-settings" aria-selected="false">Settings <span id="command-settings-count" class="badge badge-secondary">0</span></a>
     </div>
 </nav>
 
 <div class="tab-content" id="nav-tabContent">
+
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+
+    <div class="tab-pane fade show" id="command-audio" role="tabpanel" aria-labelledby="command-audio-tab">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+                <th>Example</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>play</td>
+                <td>Starts playback of the given audio track through either URL or search term. Will ask Yuuko to join the voice channel of the command issuer and if a track is already playing, queue it instead. Using the command without arguments will resume a paused player.</td>
+                <td>-play, -play [url], -play [term]</td>
+                <td><code>-play https://www.youtube.com/watch?v=DDW4hTWbRYs</code>, <code>-play something</code></td>
+            </tr>
+
+            <tr>
+                <td>pause</td>
+                <td>Pauses playback of the current track.</td>
+                <td>-pause</td>
+                <td><code>-pause</code></td>
+            </tr>
+
+            <tr>
+                <td>stop</td>
+                <td>Stops playback, clearing the queue and removing the background track.</td>
+                <td>-stop</td>
+                <td><code>-stop</code></td>
+            </tr>
+
+            <tr>
+                <td>skip</td>
+                <td>Skips the currently playing track, if there is one.</td>
+                <td>-skip</td>
+                <td><code>-skip</code></td>
+            </tr>
+
+            <tr>
+                <td>shuffle</td>
+                <td>Shuffles the queue.</td>
+                <td>-shuffle</td>
+                <td><code>-shuffle</code></td>
+            </tr>
+
+            <tr>
+                <td>current</td>
+                <td>Returns information about the currently playing track such as current time, artist and source.</td>
+                <td>-current</td>
+                <td><code>-current</code></td>
+            </tr>
+
+            <tr>
+                <td>last</td>
+                <td>Returns information about the last played track such as artist and source.</td>
+                <td>-last</td>
+                <td><code>-last</code></td>
+            </tr>
+
+            <tr>
+                <td>queue</td>
+                <td>Returns the first 10 tracks in the queue or however many there are if under 10.</td>
+                <td>-queue</td>
+                <td><code>-queue</code></td>
+            </tr>
+
+            <tr>
+                <td>clear</td>
+                <td>Clears the current queue of all of the current tracks, or clears a single track from the given position in the queue.</td>
+                <td>-clear, -clear [position]</td>
+                <td><code>-clear</code>, <code>-clear 4</code></td>
+            </tr>
+
+            <tr>
+                <td>background</td>
+                <td>Sets the background track and starts playback. Background tracks will play if there is nothing in queue and queued tracks will play instead of the background track. Use the command with no parameters to unset a set background.</td>
+                <td>-background [url], -background [term]</td>
+                <td><code>-background https://www.youtube.com/watch?v=va3Dj_sUCJs</code>, <code>-background cool music</code></td>
+            </tr>
+
+            <tr>
+                <td>loop</td>
+                <td>Toggles looping of the queue. (Finished tracks will be re-added to the end of the queue)</td>
+                <td>-loop</td>
+                <td><code>-loop</code></td>
+            </tr>
+
+            <tr>
+                <td>search</td>
+                <td>Searches YouTube and returns the first 10 results, a choice is made by typing the number and the selected track will be queued.</td>
+                <td>-search [term], -search [value], -search cancel</td>
+                <td><code>-search funky beats</code></td>
+            </tr>
+
+            <tr>
+                <td>seek</td>
+                <td>Allows seeking of currently playing tracks with an accuracy of seconds using either timestamp of seek time in seconds.</td>
+                <td>-seek [seconds], -seek [timestamp]</td>
+                <td><code>-seek 180</code>, <code>-seek 3:00</code></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+    <!--------------------------------------------->
 
     <div class="tab-pane fade show active" id="command-core" role="tabpanel" aria-labelledby="command-core-tab">
         <table class="table table-striped table-bordered">
@@ -74,6 +188,221 @@
         </table>
     </div>
 
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+
+    <div class="tab-pane fade show" id="command-fun" role="tabpanel" aria-labelledby="command-fun-tab">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+                <th>Example</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>roll</td>
+                <td>Rolls a die with the given value and returns the result. Rolling <code>00</code> will return a multiple of 10 between <code>0</code> and <code>100</code>.</td>
+                <td>-roll [value], -roll 00</td>
+                <td><code>-roll 42</code></td>
+            </tr>
+
+            <tr>
+                <td>choose</td>
+                <td>Takes a list of options, separated by a comma and returns an option at random.</td>
+                <td>-choose [choice], [choice]…</td>
+                <td><code>-choose sweet, savoury</code></td>
+            </tr>
+
+            <tr>
+                <td>spoilerify</td>
+                <td>Takes a string and turns it into an 'every character' spoiler. Adding a backtick to the start of the string will definitely break the intended output.</td>
+                <td>-spoilerify [string]</td>
+                <td><code>-spoilerify according to all known laws of aviation...</code></td>
+            </tr>
+
+            <tr>
+                <td>8ball</td>
+                <td>Input a question and get an original 8ball response.</td>
+                <td>-8ball [question]</td>
+                <td><code>-8ball Am I forever alone?</code></td>
+            </tr>
+
+            <tr>
+                <td>flip</td>
+                <td>Returns either heads, tails or in very, vary rare occurances, edge.</td>
+                <td>-flip</td>
+                <td><code>-flip</code></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+
+    <div class="tab-pane fade show" id="command-interaction" role="tabpanel" aria-labelledby="command-interaction-tab">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+                <th>Example</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>poke</td>
+                <td>Pokes the tagged user.</td>
+                <td>-poke @user</td>
+                <td><code>-poke @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>bite</td>
+                <td>Bites the tagged user.</td>
+                <td>-bite @user</td>
+                <td><code>-bite @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>hug</td>
+                <td>Hugs the tagged user.</td>
+                <td>-hug @user</td>
+                <td><code>-hug @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>attack</td>
+                <td>Attacks the tagged user.</td>
+                <td>-attack @user</td>
+                <td><code>-attack @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>angry</td>
+                <td>Displays that you are angry, or angry at the tagged user.</td>
+                <td>-angry, -angry @user</td>
+                <td><code>-angry</code>, <code>-angry @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>cry</td>
+                <td>Displays that you are crying.</td>
+                <td>-cry</td>
+                <td><code>-cry</code></td>
+            </tr>
+
+            <tr>
+                <td>laugh</td>
+                <td>Displays that you are laughing, or laughing at the tagged user.</td>
+                <td>-laugh, -laugh @user</td>
+                <td><code>-laugh</code>, <code>laugh @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>pout</td>
+                <td>Displays that you are pouting, or pouts at the tagged user.</td>
+                <td>-pout, -pout @user</td>
+                <td><code>-pout</code>, <code>-pout @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>shrug</td>
+                <td>Displays that you are shrugging, or shrugs at the tagged user.</td>
+                <td>-shrug, -shrug @user</td>
+                <td><code>-shrug</code>, <code>-shrug @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>sleep</td>
+                <td>Displays that you are sleeping.</td>
+                <td>-sleep</td>
+                <td><code>-sleep</code></td>
+            </tr>
+
+            <tr>
+                <td>tickle</td>
+                <td>Tickles the tagged user.</td>
+                <td>-tickle @user</td>
+                <td><code>-tickle @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>kiss</td>
+                <td>Kisses the tagged user.</td>
+                <td>-kiss @user</td>
+                <td><code>-kiss @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>pet</td>
+                <td>Pets the tagged user.</td>
+                <td>-pet @user</td>
+                <td><code>-pet @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>blush</td>
+                <td>Displays that you are blushing.</td>
+                <td>-blush</td>
+                <td><code>-blush</code></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+
+    <div class="tab-pane fade show" id="command-media" role="tabpanel" aria-labelledby="command-media-tab">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+                <th>Example</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>osu</td>
+                <td>Returns information about an osu! player on a specified mode. (Modes: 0 = Osu, 1 = Taiko, 2 = CtB, 3 = Mania)</td>
+                <td>-osu [username], -osu [username] [mode]</td>
+                <td><code>-osu galaxiosaurus</code>, <code>-osu galaxiosaurus 3</code></td>
+            </tr>
+
+            <tr>
+                <td>kitsu</td>
+                <td>Returns information about the given anime. (Types: show) (Character information to come soon!)</td>
+                <td>-kitsu [name]</td>
+                <td><code>-kitsu naruto</code></td>
+            </tr>
+
+            <tr>
+                <td>github</td>
+                <td>Returns information about a GitHub repository. (If demand for it arrises, I will add the abililty to list repositories by user)</td>
+                <td>-github [user|organization] [repository]</td>
+                <td><code>-github torvalds linux</code></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+
     <div class="tab-pane fade show" id="command-moderation" role="tabpanel" aria-labelledby="command-moderation-tab">
         <table class="table table-striped table-bordered">
             <thead>
@@ -117,111 +446,43 @@
         </table>
     </div>
 
-    <div class="tab-pane fade show" id="command-audio" role="tabpanel" aria-labelledby="command-audio-tab">
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+
+
+    <div class="tab-pane fade show" id="command-nsfw" role="tabpanel" aria-labelledby="command-nsfw-tab">
         <table class="table table-striped table-bordered">
             <thead>
-                <tr>
-                    <th>Command</th>
-                    <th>Description</th>
-                    <th>Usage</th>
-                    <th>Example</th>
-                </tr>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+                <th>Example</th>
+            </tr>
             </thead>
 
             <tbody>
-                <tr>
-                    <td>play</td>
-                    <td>Starts playback of the given audio track through either URL or search term. Will ask Yuuko to join the voice channel of the command issuer and if a track is already playing, queue it instead. Using the command without arguments will resume a paused player.</td>
-                    <td>-play, -play [url], -play [term]</td>
-                    <td><code>-play https://www.youtube.com/watch?v=DDW4hTWbRYs</code>, <code>-play something</code></td>
-                </tr>
+            <tr>
+                <td>efukt</td>
+                <td>Returns a random image/gif/video from eFukt.</td>
+                <td>-efukt</td>
+                <td><code>-efukt</code></td>
+            </tr>
 
-                <tr>
-                    <td>pause</td>
-                    <td>Pauses playback of the current track.</td>
-                    <td>-pause</td>
-                    <td><code>-pause</code></td>
-                </tr>
-
-                <tr>
-                    <td>stop</td>
-                    <td>Stops playback, clearing the queue and removing the background track.</td>
-                    <td>-stop</td>
-                    <td><code>-stop</code></td>
-                </tr>
-
-                <tr>
-                    <td>skip</td>
-                    <td>Skips the currently playing track, if there is one.</td>
-                    <td>-skip</td>
-                    <td><code>-skip</code></td>
-                </tr>
-
-                <tr>
-                    <td>shuffle</td>
-                    <td>Shuffles the queue.</td>
-                    <td>-shuffle</td>
-                    <td><code>-shuffle</code></td>
-                </tr>
-
-                <tr>
-                    <td>current</td>
-                    <td>Returns information about the currently playing track such as current time, artist and source.</td>
-                    <td>-current</td>
-                    <td><code>-current</code></td>
-                </tr>
-
-                <tr>
-                    <td>last</td>
-                    <td>Returns information about the last played track such as artist and source.</td>
-                    <td>-last</td>
-                    <td><code>-last</code></td>
-                </tr>
-
-                <tr>
-                    <td>queue</td>
-                    <td>Returns the first 10 tracks in the queue or however many there are if under 10.</td>
-                    <td>-queue</td>
-                    <td><code>-queue</code></td>
-                </tr>
-
-                <tr>
-                    <td>clear</td>
-                    <td>Clears the current queue of all of the current tracks, or clears a single track from the given position in the queue.</td>
-                    <td>-clear, -clear [position]</td>
-                    <td><code>-clear</code>, <code>-clear 4</code></td>
-                </tr>
-
-                <tr>
-                    <td>background</td>
-                    <td>Sets the background track and starts playback. Background tracks will play if there is nothing in queue and queued tracks will play instead of the background track. Use the command with no parameters to unset a set background.</td>
-                    <td>-background [url], -background [term]</td>
-                    <td><code>-background https://www.youtube.com/watch?v=va3Dj_sUCJs</code>, <code>-background cool music</code></td>
-                </tr>
-
-                <tr>
-                    <td>loop</td>
-                    <td>Toggles looping of the queue. (Finished tracks will be re-added to the end of the queue)</td>
-                    <td>-loop</td>
-                    <td><code>-loop</code></td>
-                </tr>
-
-                <tr>
-                    <td>search</td>
-                    <td>Searches YouTube and returns the first 10 results, a choice is made by typing the number and the selected track will be queued.</td>
-                    <td>-search [term], -search [value], -search cancel</td>
-                    <td><code>-search funky beats</code></td>
-                </tr>
-                
-                <tr>
-                    <td>seek</td>
-                    <td>Allows seeking of currently playing tracks with an accuracy of seconds using either timestamp of seek time in seconds.</td>
-                    <td>-seek [seconds], -seek [timestamp]</td>
-                    <td><code>-seek 180</code>, <code>-seek 3:00</code></td>
-                </tr>
+            <tr>
+                <td>neko</td>
+                <td>Returns a random lewd neko image by default or another type with a given parameter</td>
+                <td>-neko, -neko [type]</td>
+                <td><code>-neko</code>, &lt;code&gt;-neko boobs&lt;/code&gt;</td>
+            </tr>
             </tbody>
         </table>
     </div>
+
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+    <!--------------------------------------------->
 
     <div class="tab-pane fade show" id="command-utility" role="tabpanel" aria-labelledby="command-utility-tab">
         <table class="table table-striped table-bordered">
@@ -287,6 +548,10 @@
         </table>
     </div>
 
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+
     <div class="tab-pane fade show" id="command-world" role="tabpanel" aria-labelledby="command-world-tab">
         <table class="table table-striped table-bordered">
             <thead>
@@ -326,237 +591,20 @@
                     <td>-countdown [date], -countdown [event]</td>
                     <td><code>-countdown 23/07/2019</code>, <code>-countdown brexit</code></td>
                 </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="tab-pane fade show" id="command-interaction" role="tabpanel" aria-labelledby="command-interaction-tab">
-        <table class="table table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th>Command</th>
-                    <th>Description</th>
-                    <th>Usage</th>
-                    <th>Example</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>poke</td>
-                    <td>Pokes the tagged user.</td>
-                    <td>-poke @user</td>
-                    <td><code>-poke @Yuuko#2525</code></td>
-                </tr>
 
                 <tr>
-                    <td>bite</td>
-                    <td>Bites the tagged user.</td>
-                    <td>-bite @user</td>
-                    <td><code>-bite @Yuuko#2525</code></td>
-                </tr>
-
-                <tr>
-                    <td>hug</td>
-                    <td>Hugs the tagged user.</td>
-                    <td>-hug @user</td>
-                    <td><code>-hug @Yuuko#2525</code></td>
-                </tr>
-
-                <tr>
-                    <td>attack</td>
-                    <td>Attacks the tagged user.</td>
-                    <td>-attack @user</td>
-                    <td><code>-attack @Yuuko#2525</code></td>
-                </tr>
-
-                <tr>
-                    <td>angry</td>
-                    <td>Displays that you are angry, or angry at the tagged user.</td>
-                    <td>-angry, -angry @user</td>
-                    <td><code>-angry</code>, <code>-angry @Yuuko#2525</code></td>
-                </tr>
-
-                <tr>
-                    <td>cry</td>
-                    <td>Displays that you are crying.</td>
-                    <td>-cry</td>
-                    <td><code>-cry</code></td>
-                </tr>
-
-                <tr>
-                    <td>laugh</td>
-                    <td>Displays that you are laughing, or laughing at the tagged user.</td>
-                    <td>-laugh, -laugh @user</td>
-                    <td><code>-laugh</code>, <code>laugh @Yuuko#2525</code></td>
-                </tr>
-
-                <tr>
-                    <td>pout</td>
-                    <td>Displays that you are pouting, or pouts at the tagged user.</td>
-                    <td>-pout, -pout @user</td>
-                    <td><code>-pout</code>, <code>-pout @Yuuko#2525</code></td>
-                </tr>
-
-                <tr>
-                    <td>shrug</td>
-                    <td>Displays that you are shrugging, or shrugs at the tagged user.</td>
-                    <td>-shrug, -shrug @user</td>
-                    <td><code>-shrug</code>, <code>-shrug @Yuuko#2525</code></td>
-                </tr>
-
-                <tr>
-                    <td>sleep</td>
-                    <td>Displays that you are sleeping.</td>
-                    <td>-sleep</td>
-                    <td><code>-sleep</code></td>
-                </tr>
-
-                <tr>
-                    <td>tickle</td>
-                    <td>Tickles the tagged user.</td>
-                    <td>-tickle @user</td>
-                    <td><code>-tickle @Yuuko#2525</code></td>
-                </tr>
-
-                <tr>
-                    <td>kiss</td>
-                    <td>Kisses the tagged user.</td>
-                    <td>-kiss @user</td>
-                    <td><code>-kiss @Yuuko#2525</code></td>
-                </tr>
-
-                <tr>
-                    <td>pet</td>
-                    <td>Pets the tagged user.</td>
-                    <td>-pet @user</td>
-                    <td><code>-pet @Yuuko#2525</code></td>
-                </tr>
-
-                <tr>
-                    <td>blush</td>
-                    <td>Displays that you are blushing.</td>
-                    <td>-blush</td>
-                    <td><code>-blush</code></td>
+                    <td>natgeo</td>
+                    <td>Returns the top 10 headlines from National Geographic via NewsAPI.</td>
+                    <td>-natgeo</td>
+                    <td><code>-natgeo</code></td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <div class="tab-pane fade show" id="command-fun" role="tabpanel" aria-labelledby="command-fun-tab">
-        <table class="table table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th>Command</th>
-                    <th>Description</th>
-                    <th>Usage</th>
-                    <th>Example</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>roll</td>
-                    <td>Rolls a die with the given value and returns the result. Rolling <code>00</code> will return a multiple of 10 between <code>0</code> and <code>100</code>.</td>
-                    <td>-roll [value], -roll 00</td>
-                    <td><code>-roll 42</code></td>
-                </tr>
-
-                <tr>
-                    <td>choose</td>
-                    <td>Takes a list of options, separated by a comma and returns an option at random.</td>
-                    <td>-choose [choice], [choice]…</td>
-                    <td><code>-choose sweet, savoury</code></td>
-                </tr>
-                
-                <tr>
-                    <td>spoilerify</td>
-                    <td>Takes a string and turns it into an 'every character' spoiler. Adding a backtick to the start of the string will definitely break the intended output.</td>
-                    <td>-spoilerify [string]</td>
-                    <td><code>-spoilerify according to all known laws of aviation...</code></td>
-                </tr>
-
-		<tr>
-                    <td>8ball</td>
-                    <td>Input a question and get an original 8ball response.</td>
-                    <td>-8ball [question]</td>
-                    <td><code>-8ball Am I forever alone?</code></td>
-                </tr>
-
-		<tr>
-                    <td>flip</td>
-                    <td>Returns either heads, tails or in very, vary rare occurances, edge.</td>
-                    <td>-flip</td>
-                    <td><code>-flip</code></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="tab-pane fade show" id="command-media" role="tabpanel" aria-labelledby="command-media-tab">
-        <table class="table table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th>Command</th>
-                    <th>Description</th>
-                    <th>Usage</th>
-                    <th>Example</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>osu</td>
-                    <td>Returns information about an osu! player on a specified mode. (Modes: 0 = Osu, 1 = Taiko, 2 = CtB, 3 = Mania)</td>
-                    <td>-osu [username], -osu [username] [mode]</td>
-                    <td><code>-osu galaxiosaurus</code>, <code>-osu galaxiosaurus 3</code></td>
-                </tr>
-
-                <tr>
-                    <td>kitsu</td>
-                    <td>Returns information about the given anime. (Types: show) (Character information to come soon!)</td>
-                    <td>-kitsu [name]</td>
-                    <td><code>-kitsu naruto</code></td>
-                </tr>
-                
-                <tr>
-                    <td>github</td>
-                    <td>Returns information about a GitHub repository. (If demand for it arrises, I will add the abililty to list repositories by user)</td>
-                    <td>-github [user|organization] [repository]</td>
-                    <td><code>-github torvalds linux</code></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="tab-pane fade show" id="command-nsfw" role="tabpanel" aria-labelledby="command-nsfw-tab">
-        <table class="table table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th>Command</th>
-                    <th>Description</th>
-                    <th>Usage</th>
-                    <th>Example</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>efukt</td>
-                    <td>Returns a random image/gif/video from eFukt.</td>
-                    <td>-efukt</td>
-                    <td><code>-efukt</code></td>
-                </tr>
-
-                <tr>
-                    <td>neko</td>
-                    <td>Returns a random lewd neko image by default or another type with a given parameter</td>
-                    <td>-neko, -neko [type]</td>
-                    <td><code>-neko</code>, &lt;code&gt;-neko boobs&lt;/code&gt;</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+    <!--------------------------------------------->
 
     <div class="tab-pane fade show" id="command-settings" role="tabpanel" aria-labelledby="command-settings-tab">
         <table class="table table-striped table-bordered">

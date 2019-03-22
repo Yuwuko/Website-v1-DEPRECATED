@@ -34,6 +34,19 @@ html, body{
     display: flex;
 }
 
+.padded {
+    padding: 10px 40px;
+}
+
+.padded iframe {
+    margin: 5px 0px;
+}
+
+.col {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
 .guildContainer {
     display: inline-block;
     padding: 5px;
