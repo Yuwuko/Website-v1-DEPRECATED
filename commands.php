@@ -600,6 +600,13 @@
                     <td>-natgeo</td>
                     <td><code>-natgeo</code></td>
                 </tr>
+
+                <tr>
+                    <td>petition</td>
+                    <td>Returns a petition from <code>petition.parliament.uk</code> via an input ID.</td>
+                    <td>-petition [id]</td>
+                    <td><code>-petition 241584</code></td>
+                </tr>
             </tbody>
         </table>
     </div>
