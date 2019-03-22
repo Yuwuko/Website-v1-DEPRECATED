@@ -6,7 +6,7 @@
     </li>
             
     <li class="nav-item">
-        <a class="nav-link" href="https://metrics.yuuko.info:3000/d/euzZCcUik/yuuko?refresh=10s&orgId=1&kiosk" target="_blank">Metrics</a>
+        <a class="nav-link" href="metrics.php">Metrics</a>
     </li>
     
     <li class="nav-item">

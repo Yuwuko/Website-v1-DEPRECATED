@@ -38,8 +38,8 @@ html, body{
     padding: 10px 40px;
 }
 
-.padded iframe {
-    margin: 5px 0px;
+.padded iframe, .margined iframe{
+    margin: 5px 0;
 }
 
 .col {
