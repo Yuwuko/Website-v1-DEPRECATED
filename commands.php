@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <p class=mt-2>The global invocation/prefix is <code>@Yuuko</code> (mention) and the custom prefix is automatically set to <code>-</code>, but can be changed. Using <code>-settings prefix !</code> will change the prefix and <code>-help [command]</code> will show you usage for the given command.</p>
 
 <nav>
