@@ -12,14 +12,6 @@
     
     <!------------------------------------------------------------------------------------->
     
-    <div class="container padded">
-        <div class="row">
-            <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=46&theme=light" height="200" frameborder="0"></iframe>
-        
-            <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=48&theme=light" height="200" frameborder="0"></iframe>
-        </div>
-    </div>
-    
     <div class="container">
         <?php include "commands.php" ?>
     </div>
