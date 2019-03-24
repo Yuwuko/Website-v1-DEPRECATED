@@ -67,7 +67,7 @@ if(isset($_SESSION['jsonData'])) { ?>
             $_SESSION['permissions'] = $permissions;
 
             if($i == 0) {
-                echo "<span class='flex-fill text-center'>It appears that you haven't got the permissions to manage any guilds! :(</span>";
+                echo "<span class='flex-fill text-center'>It appears that you haven't got the permissions to manage any guilds! :(<br>Click <a href=\"https://discordapp.com/api/oauth2/authorize?client_id=420682957007880223&permissions=8&scope=bot\" target=\"_blank\">here</a> to invite me to one you do!</span>";
             }
         ?>
     </div>

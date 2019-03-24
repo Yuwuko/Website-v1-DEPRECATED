@@ -236,7 +236,7 @@
 
             <tr>
                 <td>flip</td>
-                <td>Returns either heads, tails or in very, vary rare occurances, edge.</td>
+                <td>Returns either heads, tails or in very, vary rare occurrences, edge.</td>
                 <td>-flip</td>
                 <td><code>-flip</code></td>
             </tr>
@@ -476,7 +476,7 @@
                 <td>neko</td>
                 <td>Returns a random lewd neko image by default or another type with a given parameter</td>
                 <td>-neko, -neko [type]</td>
-                <td><code>-neko</code>, &lt;code&gt;-neko boobs&lt;/code&gt;</td>
+                <td><code>-neko</code>, <code>-neko boobs</code></td>
             </tr>
             </tbody>
         </table>
@@ -523,7 +523,7 @@
                     <td>bind <span class="badge badge-danger">MANAGE_SERVER</span></td>
                     <td>Binds a module to a text channel preventing commands from being executed outside of that channel. Modules can be bound to multiple channels and unbound by retyping the command. (A toggle) No parameters will return a list of bound channels.</td>
                     <td>-bind [module] | #channel…</td>
-                    <td><code>-bind audio</code>, <code>-bind audio #test-channel #another-channel</code></td>
+                    <td><code>-bind audio</code>, <code>-bind audio #test-channel...</code></td>
                 </tr>
 
 		        <tr>
@@ -604,8 +604,8 @@
                 <tr>
                     <td>petition</td>
                     <td>Returns a petition from <code>petition.parliament.uk</code> via an input ID.</td>
-                    <td>-petition [id]</td>
-                    <td><code>-petition 241584</code></td>
+                    <td>-petition, -petition [id]</td>
+                    <td><code>-petition</code>, <code>-petition 241584</code></td>
                 </tr>
             </tbody>
         </table>
