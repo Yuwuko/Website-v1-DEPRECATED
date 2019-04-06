@@ -12,7 +12,7 @@
     
     <!------------------------------------------------------------------------------------->
 
-    <div class="container">
+    <div class="container" style="background-color: #ffffff">
         <?php include "commands.php" ?>
     </div>
     
