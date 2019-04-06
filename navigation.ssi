@@ -1,4 +1,15 @@
-<div class='jumbotron container text-center'><h2>Yuuko</h2></div>
+<div id="particles-js" class="cover"></div>
+<script src="/js/particles.min.js"></script>
+<script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', '/js/particles.json', function() {
+        console.log('callback - particles.min.js config loaded');
+    });
+</script>
+
+<div class="jumbotron container text-center'"><h2>Yuuko</h2></div>
+
+<div class="cover"></div>
 
 <ul class="nav navbar-fixed-top nav-tabs container">      
     <li class="nav-item">

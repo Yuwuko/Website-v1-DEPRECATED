@@ -52,13 +52,9 @@ if(isset($_SESSION['jsonData'])) { ?>
             foreach($_SESSION['jsonData'] as $guild) {
                 if($guild['permissions'] == 2146958847) {
             ?>
-            
-        
             <div class="guildContainer pointer" <?php echo "data-guild='".$guild['id']."'"?> <?php echo "data-name='".$guild['name']."'"?> data-toggle="tooltip" data-placement="bottom" title="<?php echo $guild['name']?>" style="width: 4rem;">
               <img class="card-img-top" src="https://cdn.discordapp.com/icons/<?php echo $guild['id']."/".$guild['icon'].".png" ?>" alt="">
             </div>
-  
-            
             <?php 
                     array_push($permissions, $guild['id']);
                     $i++;
