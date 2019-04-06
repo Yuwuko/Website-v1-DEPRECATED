@@ -7,11 +7,11 @@
     <title>Yuuko</title>
 </head> 
 <body>
-    
+
     <?php include 'navigation.ssi' ?>
     
     <!------------------------------------------------------------------------------------->
-    
+
     <div class="container">
         <?php include "commands.php" ?>
     </div>
