@@ -426,14 +426,14 @@
 
                 <tr>
                     <td>ban <span class="badge badge-danger">BAN_MEMBERS</span></td>
-                    <td>Bans the provided user, with an option to nuke all of their messages from the past 1-7 days, and optional reason.</td>
+                    <td>Bans the provided user, with an option to nuke all of their messages from the past 1-7 days, and optional reason. To unban a user, use the command on them once again. (using the long ID)</td>
                     <td>-ban @user | [delDays] | [reason]</td>
                     <td><code>-ban @Yuuko</code>, <code>-ban @Yuuko 4</code>, <code>-ban @Yuuko butthead</code>, <code>-ban @Yuuko 5 butthead</code></td>
                 </tr>
 
                 <tr>
                     <td>mute <span class="badge badge-danger">MUTE_MEMBERS</span></td>
-                    <td>Mutes the provided user from both voice and text chat on the server, with an optional reason (Toggle)</td>
+                    <td>Mutes the provided user from both voice and text chat on the server, with an optional reason. To unmute a user you can either use the command on them again or manually remove the <code>Muted</code> role.</td>
                     <td>-mute @user, -mute @user [reason]</td>
                     <td><code>-mute @Yuuko</code>, <code>-mute @Yuuko test reason</code></td>
                 </tr>
