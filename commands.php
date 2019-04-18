@@ -125,6 +125,13 @@
                 <td>-seek [seconds], -seek [timestamp]</td>
                 <td><code>-seek 180</code>, <code>-seek 3:00</code></td>
             </tr>
+
+            <tr>
+                <td>lyrics</td>
+                <td>Returns the lyrics to an input song, or the first song by an input artist.</td>
+                <td>-lyrics [song|artist]</td>
+                <td><code>-lyrics she wolf</code></td>
+            </tr>
             </tbody>
         </table>
     </div>
