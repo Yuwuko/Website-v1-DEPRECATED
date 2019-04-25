@@ -128,7 +128,7 @@
 
             <tr>
                 <td>lyrics</td>
-                <td>Returns the lyrics to an input song, or the first song by an input artist.</td>
+                <td>Returns the lyrics to a song, or the first song by an artist.</td>
                 <td>-lyrics [song|artist]</td>
                 <td><code>-lyrics she wolf</code></td>
             </tr>
@@ -613,6 +613,13 @@
                     <td>Returns a petition from <code>petition.parliament.uk</code> via an input ID.</td>
                     <td>-petition, -petition [id]</td>
                     <td><code>-petition</code>, <code>-petition 241584</code></td>
+                </tr>
+
+                <tr>
+                    <td>urban</td>
+                    <td>Returns the definition of a word and examples from Urban Dictionary.</td>
+                    <td>-urban [term]</td>
+                    <td><code>-urban ur mum</code></td>
                 </tr>
             </tbody>
         </table>

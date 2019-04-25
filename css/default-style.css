@@ -1,6 +1,10 @@
 html, body{
 }
 
+h4 {
+    margin: 0;
+}
+
 #avatar {
     width: 50px;
     border-radius: 5px;
@@ -105,4 +109,31 @@ html, body{
     background-color: rgba(0,0,0,0.1);
     padding: 10px;
     border-radius: 5px;
+}
+
+.shardContainer {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    padding-top: 40px;
+}
+
+.shardId {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    padding: 5px 0 5px 10px !important;
+    line-height: 16px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.bold {
+    color: #999999;
+    font-weight: bold;
+}
+
+.inline-block {
+    display: inline-block;
 }

@@ -47,7 +47,7 @@
               <div class="card-body">
                 <h6 class="card-title text-center">divinediscordbots.com</h6>
                 <p class="card-text">The latest bot list that Yuuko has been added to in late January 2019, with a link to their website <a href="https://divinediscordbots.com">here</a>.</p>
-                <a href="https://divinediscordbots.com/bots/420682957007880223/vote" class="btn btn-primary btn-block">Vote</a>
+                <a href="https://divinediscordbots.com/bot/420682957007880223/vote" class="btn btn-primary btn-block">Vote</a>
               </div>
             </div>
         </div>
