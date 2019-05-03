@@ -1,11 +1,12 @@
 <div class="cover"></div>
 
-<div class="jumbotron container text-center'">
+<div class="jumbotron text-center'">
     <h2>Yuuko</h2>
     <div class="cover"></div>
 </div>
 
-<ul class="nav navbar-fixed-top nav-tabs container">      
+<ul class="nav navbar-fixed-top nav-tabs">
+<div class="container inherit light">
     <li class="nav-item">
         <a class="nav-link" href="https://www.yuuko.info">Commands</a>
     </li>
@@ -21,8 +22,12 @@
     <li class="nav-item">
         <a class="nav-link" target="_blank" href="https://github.com/Yuuko-oh">Source</a>
     </li>
+
+    <li class="nav-item">
+        <a class="nav-link target="_blank" href="https://discordapp.com/oauth2/authorize?client_id=420682957007880223&permissions=8&scope=bot">Invite</a>
           
     <li class="nav-item">
         <a class="nav-link" target="_blank" href="https://discord.gg/VsM25fN">Support Server</a>
-    </li>      
+    </li>
+</div>
 </ul>

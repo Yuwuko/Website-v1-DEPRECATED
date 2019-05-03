@@ -10,8 +10,6 @@
 
 <?php include 'navigation.ssi' ?>
 
-<br>
-
     <div class="container">
         <div class="row">
         <?php
@@ -43,11 +41,6 @@
 
     <div class="container margined">
         <div class="row">
-            <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=46&theme=light" height="200" frameborder="0"></iframe>
-            <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=48&theme=light" height="200" frameborder="0"></iframe>
-        </div>
-
-        <div class="row">
             <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=44&theme=light" height="200" frameborder="0"></iframe>
         </div>
 
@@ -57,7 +50,11 @@
 
         <div class="row">
             <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=52&theme=light" height="200" frameborder="0"></iframe>
+        </div>
 
+        <div class="row">
+            <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=46&theme=light" height="200" frameborder="0"></iframe>
+            <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=48&theme=light" height="200" frameborder="0"></iframe>
         </div>
 
         <div class="row">
@@ -69,7 +66,9 @@
         </div>
 
         <div class="row">
-            <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=40&theme=light" height="200" frameborder="0"></iframe>
+            <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=54&theme=light" height="200" frameborder="0"></iframe>
+            <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=55&theme=light" height="200" frameborder="0"></iframe>
+            <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=56&theme=light" height="200" frameborder="0"></iframe>
         </div>
     </div>
 

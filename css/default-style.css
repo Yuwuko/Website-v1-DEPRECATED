@@ -1,4 +1,6 @@
-html, body{
+html, body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #eeeeee;
 }
 
 h4 {
@@ -19,19 +21,23 @@ h4 {
     width: 100%;
     height: 99.7%;
     top: 0;
+    left: 0;
     z-index: 0;
 }
 
 .jumbotron {
-    margin-top: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
+    height: 300px;
     background: url(/img/jumbotron.png);
     background-size: cover;
+    border-radius: 0 !important;
 }
 
 .jumbotron h2 {
     color: white;
     text-align: center;
+    font-size: 5.5rem;
+    line-height: 200%;
 }
 
 .btn-warning, .btn-warning:hover {
@@ -129,11 +135,24 @@ h4 {
     background-color: rgba(0,0,0,0.5);
 }
 
+.table {
+    background-color: #ffffff !important;
+}
+
 .bold {
     color: #999999;
     font-weight: bold;
 }
 
+.light, .nav-tabs {
+    background-color: white;
+}
+
 .inline-block {
     display: inline-block;
+}
+
+.inherit {
+    display: inherit;
+    padding: 0 !important;
 }
