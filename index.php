@@ -17,7 +17,7 @@
 
         <p>Welcome to <code>www.yuuko.info</code>, the home of <code>Yuuko</code>. Here you can find a list of commands, a variety of different metrics as well as links to the source code, support server, every bot list that Yuuko happens to be in and most importantly, an <a href="https://discordapp.com/oauth2/authorize?client_id=420682957007880223&permissions=8&scope=bot" target="_blank">invite link</a> for Yuuko to join your server!</p>
 
-        <p>Yuuko's development started some time in mid 2018 and has been slowly worked on ever since. As of today, Yuuko can be found in more than <code>150</code> different servers with over <code>50,000</code> users and all in all is hosted in part on <code>4</code>  different servers.
+        <p>Yuuko's development started some time in mid 2018 and has been slowly worked on ever since. As of today, Yuuko can be found in more than <code>200</code> different servers with over <code>60,000</code> users and all in all is hosted in part on <code>4</code>  different servers.
         Two of the servers are for Yuuko herself, one of them is for this website and Yuuko's database and the remaining server is used as a Lavalink node to process audio for the servers which decide to use that feature.</p>
 
         <?php include "commands.php" ?>

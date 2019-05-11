@@ -553,6 +553,13 @@
                     <td>-ping</td>
                     <td><code>-ping</code></td>
                 </tr>
+
+                <tr>
+                    <td>reactrole</td>
+                    <td>Used to setup reaction roles on messages that users can click to get certain set roles.</td>
+                    <td>-reactrole select, -reactrole select [messageId], -reactrole add [:emote:] [@role], -reactrole rem [:emote:]</td>
+                    <td><code>-reactrole select</code>, <code>-reactrole select 000000000000000000</code>, <code>-reactrole add :ShinobuOshino: @TestRole</code>, <code>-reactrole rem :ShinobuOshino:</code></td>
+                </tr>
             </tbody>
         </table>
     </div>

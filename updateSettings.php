@@ -4,7 +4,7 @@ if(isset($_SESSION['key']) && isset($_SESSION['permissions'])) {
     if(in_array($_POST['guildId'], $_SESSION['permissions'])) {
         
         include_once 'dbCredentials.php';
-        $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+        $conn = new mysqli($dbhost, $dbuser2, $dbpass2, $dbname2);
         
         $stmt = $conn->prepare("UPDATE `GuildSettings` SET prefix = ?, deleteExecuted = ?, nowPlaying = ?, djMode = ?, starboard = ?, commandLog = ?, modLog = ?, newMember = ?, newMemberMessage = ? WHERE guildId = ?");
         $stmt -> bind_param("siiissssss", $prefix, $deleteExecuted, $nowPlaying, $djMode, $starboard, $commandLog, $modLog, $newMember, $newMemberMessage, $guildId);

@@ -156,3 +156,12 @@ h4 {
     display: inherit;
     padding: 0 !important;
 }
+
+.tutorial-step {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.tutorial-step img {
+    width: 50%;
+}
