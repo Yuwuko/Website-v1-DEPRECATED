@@ -364,6 +364,27 @@
                 <td>-blush</td>
                 <td><code>-blush</code></td>
             </tr>
+
+            <tr>
+                <td>pat</td>
+                <td>Pats the tagged user on the head.</td>
+                <td>-pat @user</td>
+                <td><code>-pat @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>kill</td>
+                <td>Kills the tagged user.</td>
+                <td>-kill @user</td>
+                <td><code>-kill @Yuuko#2525</code></td>
+            </tr>
+
+            <tr>
+                <td>dance</td>
+                <td>Displays that you are dancing alone or with the tagged user.</td>
+                <td>-dance, -dance @user</td>
+                <td><code>-dance</code>, <code>-dance @Yuuko#2525</code></td>
+            </tr>
             </tbody>
         </table>
     </div>
@@ -555,7 +576,7 @@
                 </tr>
 
                 <tr>
-                    <td>reactrole</td>
+                    <td>reactrole <span class="badge badge-danger">MANAGE_ROLES</span></td>
                     <td>Used to setup reaction roles on messages that users can click to get certain set roles.</td>
                     <td>-reactrole select, -reactrole select [messageId], -reactrole add [:emote:] [@role], -reactrole rem [:emote:]</td>
                     <td><code>-reactrole select</code>, <code>-reactrole select 000000000000000000</code>, <code>-reactrole add :ShinobuOshino: @TestRole</code>, <code>-reactrole rem :ShinobuOshino:</code></td>
