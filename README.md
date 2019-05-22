@@ -1,4 +1,4 @@
-# Yuuko-Website 2019-05-15
+# Yuuko-Website 2019-05-22
 
 This project is the open source repository for the [Yuuko](https://github.com/Yuuko-oh/Yuuko) bot website, which is a multipurpose chat bot created for Discord. The aim of this repository is purely transparency and a place to store the project files in the cloud. 
 
