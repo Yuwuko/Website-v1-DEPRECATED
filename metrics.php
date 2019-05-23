@@ -66,6 +66,10 @@
         </div>
 
         <div class="row">
+            <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=58&theme=light" height="200" frameborder="0"></iframe>
+        </div>
+
+        <div class="row">
             <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=54&theme=light" height="200" frameborder="0"></iframe>
             <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=55&theme=light" height="200" frameborder="0"></iframe>
             <iframe class="col" src="https://metrics.yuuko.info:3000/d-solo/euzZCcUik/yuuko?refresh=1m&orgId=1&panelId=56&theme=light" height="200" frameborder="0"></iframe>

@@ -712,10 +712,10 @@
                 </tr>
 
                 <tr>
-                    <td>commandLog</td>
+                    <td>comLog</td>
                     <td>Channel used for the command log, default value of null (off) set by tagging a channel, unset by typing anything else. Use <code>setup</code> to automatically setup the channel.</td>
                     <td>#channel, ‘setup’, null</td>
-                    <td><code>-settings commandLog #commandLog</code>, <code>-settings commandLog setup</code></td>
+                    <td><code>-settings comLog #commandLog</code>, <code>-settings comLog setup</code></td>
                 </tr>
 
                 <tr>
